@@ -43,9 +43,9 @@ import ffmpeg
 # Initialize the bot
 bot = Client(
     "bot",
-    api_id= "28712726",
-    api_hash= "06acfd441f9c3402ccdb1945e8e2a93b",
-    bot_token= "8466143564:AAHrulKJRCeC5C6dfaszBrz5CXDez-hjzjs"
+    api_id= "25318125",
+    api_hash= "b29fb6a928e8b8a3308f8c2d3ba9cfb0",
+    bot_token= "8094768355:AAHxSY2LMPAnki5s6LhjjDPUFnHPW_u52Mw"
 )
 
 cookies_file_path = os.getenv("cookies_file_path", "youtube_cookies.txt")
@@ -614,10 +614,10 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'**╭━━━━━━━━━━━╮**\n**💫 𝐕ɪᴅᴇⱺ 𝐈𝐃** : **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📁𝐓ɪᴛʟᴇ : {name1}** **({res}) chitij.mkv\n** \n**📚𝐂ⱺᴜʀꜱᴇ** : **{b_name}**\n\n**⚡Dⱺw𐓣𝗅ⱺ𝖺𝖽ed By** : **{CR}** </blockquote>'
-                cc1 = f'**╭━━━━━━━━━━╮**\n**💫 𝐅ɪʟᴇ 𝐈𝐃** : **{str(count).zfill(3)}**\n**╰━━━━━━━━━━╯**\n**📁𝐓ɪᴛʟᴇ : {name1}** **chitij.pdf\n** \n**📚𝐂ⱺᴜʀꜱᴇ** : **{b_name}**\n\n**⚡Dⱺw𐓣𝗅ⱺ𝖺𝖽ed By** : **{CR}** '
+                cc = f'**╭━━━━━━━━━━━╮**\n**💫 𝐕ɪᴅᴇⱺ 𝐈𝐃** : **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📁𝐓ɪᴛʟᴇ : {name1}** **({res}).mkv\n** \n**📚𝐂ⱺᴜʀꜱᴇ** : **{b_name}**\n\n**⚡Dⱺw𐓣𝗅ⱺ𝖺𝖽ed By** : **{CR}** </blockquote>'
+                cc1 = f'**╭━━━━━━━━━━╮**\n**💫 𝐅ɪʟᴇ 𝐈𝐃** : **{str(count).zfill(3)}**\n**╰━━━━━━━━━━╯**\n**📁𝐓ɪᴛʟᴇ : {name1}** **.pdf\n** \n**📚𝐂ⱺᴜʀꜱᴇ** : **{b_name}**\n\n**⚡Dⱺw𐓣𝗅ⱺ𝖺𝖽ed By** : **{CR}** '
                 cczip = f'**——— ✦ {str(count).zfill(3)} ✦ ———**\n\n**📁 Title :** `{name1} .zip`\n\n**📚 Course :** `{b_name}`\n\n**🌟 Extracted By :** {CR}'
-                ccimg = f'**╭━━━━━━━━━━━╮**\n**💫 𝐈ᴍᴀɢᴇ 𝐈𝐃** : **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n\n**📁𝐓ɪᴛʟᴇ** : **{name1}** **chitij.JPG**\n\n**📚𝐂ⱺᴜʀꜱᴇ** : **{b_name}**\n\n**⚡Dⱺw𐓣𝗅ⱺ𝖺𝖽ed By** : **{CR}** '
+                ccimg = f'**╭━━━━━━━━━━━╮**\n**💫 𝐈ᴍᴀɢᴇ 𝐈𝐃** : **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n\n**📁𝐓ɪᴛʟᴇ** : **{name1}** **.JPG**\n\n**📚𝐂ⱺᴜʀꜱᴇ** : **{b_name}**\n\n**⚡Dⱺw𐓣𝗅ⱺ𝖺𝖽ed By** : **{CR}** '
                 ccm = f'**——— ✦ {str(count).zfill(3)} ✦ ———**\n\n**🎵 Title :** `{name1} .mp3`\n\n**📚 Course :** `{b_name}`\n\n**🌟 Extracted By :** {CR}'
                 cchtml = f'**——— ✦ {str(count).zfill(3)} ✦ ———**\n\n**🌐 Title :** `{name1} .html`\n\n**📚 Course :** `{b_name}`\n\n**🌟 Extracted By :** {CR}'
                 
